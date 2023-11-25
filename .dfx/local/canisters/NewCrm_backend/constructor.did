@@ -1,0 +1,17 @@
+type Customer = 
+ record {
+   Category: text;
+   Date: text;
+   Priority: text;
+   TaskName: text;
+   Time: text;
+   id: text;
+   name: text;
+ };
+service : {
+  addCustomer: (text, text, text, text, text, text) -> () oneway;
+  addUser: (text, text, text, text, text, text) -> () oneway;
+  getCustomers: () -> (vec Customer) query;
+  getValue: () -> (nat) query;
+  increment: () -> ();
+}

@@ -1,0 +1,125 @@
+
+
+.container{
+  background: linear-gradient(180deg, #517FF6 0%, #253663 100%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.abx{
+  margin-left: 32px;
+}
+
+.containerInside{
+  width: 90%;
+  margin: auto;
+  margin-top: 5rem;
+  height: 80%;
+  border-radius: 20px;
+  background: #FFF;
+}
+#leadSource{
+  border: 2px solid black;
+}
+@media only screen and (max-width:500px)
+{
+    .wrapper{
+        grid-template-columns: auto;
+        /* background: red; */
+        padding: 0;
+    }
+}
+
+.heading{
+  color: #000;
+  font-family: Jost;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 2%;
+  padding-left: 90px;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 50px;
+  padding-left: 100px;
+  /* padding: auto; */
+  padding-top: 40px;
+  /* grid-template-rows: auto auto auto auto auto; */
+}
+
+
+.btns{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.custom{
+  border: 1px solid black;
+  background: #FFF;
+  margin-left: 32px;
+  height: 40px;
+  width: 500px;
+  background: #A3B7EA;
+}
+.custom input{
+  background: red;
+  font-size: 18px;
+}
+
+.save{
+  border-radius: 20px;
+  background: #517FF6;
+  width: 50%;
+  height: 140%;
+  color: #FFF;
+  text-align: center;
+  font-family: Jost;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 215px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.cancel{
+  color: #000;
+  text-align: center;
+  font-family: Jost;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal; 
+  width: 215px;
+  height: 60px;
+  flex-shrink: 0;
+  border: 1px solid black;
+  border-radius: 20px;
+
+}
+
+.custom::placeholder{
+  color: rgba(0, 0, 0, 0.75);
+  font-family: Jost;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+.one{
+  color: #000;
+  font-family: Jost;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

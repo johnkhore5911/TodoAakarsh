@@ -1,0 +1,17 @@
+// Version: 1.0.0
+type Customer =
+  {
+    Category : Text;
+    Date : Text;
+    Priority : Text;
+    TaskName : Text;
+    Time : Text;
+    id : Text;
+    name : Text
+  };
+type List<T> = ?(T, List<T>);
+actor {
+  stable var currentValue : Nat;
+  stable var customers : ?(Customer, List<Customer>);
+  stable var idCount : Nat
+};
